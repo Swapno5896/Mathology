@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Mathology
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Live Site Link [Mathology](https://mathology11.netlify.app/).
 
 ## Available Scripts
 
