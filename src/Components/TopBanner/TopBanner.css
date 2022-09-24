@@ -1,0 +1,13 @@
+/* .Topbanner-container {
+
+    height: 700px;
+    background-image: url('../../images/top_banner.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+} */
+.topbanner-container img {
+    height: 500px;
+    width: 100%;
+}
