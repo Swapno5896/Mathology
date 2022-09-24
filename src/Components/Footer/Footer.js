@@ -7,7 +7,7 @@ const Footer = () => {
             <div className="row">
                 <div className="col-md-4 footer-aurpon-container">
                     <h2>Calculas Of The Day</h2>
-                    <p className='pt-3'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur amet quisquam rem. Nulla eaque soluta voluptate, maiores, quia magni totam numquam, explicabo quibusdam accusamus porro suscipit tenetur rerum non reprehenderit?</p>
+                    <p className='pt-3'>We are currently working on creating different databases of mathematical problems with solutions. Hope the second derivative of your life is always negative.</p>
                     <button className='btn btn-danger f-btn'>
                         <a href="https://instagram.com/calculusoftheday?igshid=NzNkNDdiOGI=">Instragram</a>
                     </button>
@@ -28,9 +28,9 @@ const Footer = () => {
                     <img src={require('../../images/footer.jpg')} alt="" />
                 </div>
                 <div className="col-md-3 footer-location ">
-                    <p>Momtaz Plaza (3rd Floor) House #07, Road #04,</p>
+                    {/* <p>Sundori Plaza (3rd Floor) House #07, Road #04,</p> */}
                     <p>Dhaka, Bangladesh</p>
-                    <p>Swapnom73@gmail.com</p>
+                    <p>calculusoftheday@gmail.com</p>
                 </div>
             </div>
             <p className="pt-5 text-center fw-semibold">Copyright © 2022 Calculas Of The Day</p>

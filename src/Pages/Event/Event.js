@@ -20,7 +20,7 @@ const Event = () => {
 
     return (
         <div>
-            <h2 className='mb-5'>Welcome To CALCHUNT 1.0</h2>
+            <h2 className='mb-5 mt-5 pt-4'>Welcome To CALCHUNT 1.0</h2>
             <div id="iframe-container" >
                 <iframe id="refIframe"
                     title='unique_title'
