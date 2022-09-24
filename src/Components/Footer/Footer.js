@@ -8,9 +8,15 @@ const Footer = () => {
                 <div className="col-md-4 footer-aurpon-container">
                     <h2>Calculas Of The Day</h2>
                     <p className='pt-3'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur amet quisquam rem. Nulla eaque soluta voluptate, maiores, quia magni totam numquam, explicabo quibusdam accusamus porro suscipit tenetur rerum non reprehenderit?</p>
-
-                    <button className='btn btn-primary f-btn'>You Tube</button>
-                    <button className='btn btn-danger ms-3  f-btn'>Facebook</button>
+                    <button className='btn btn-danger f-btn'>
+                        <a href="https://instagram.com/calculusoftheday?igshid=NzNkNDdiOGI=">Instragram</a>
+                    </button>
+                    <button className='btn btn-primary ms-3  f-btn'>
+                        <a href="https://www.facebook.com/groups/mathology">Facebook Group</a>
+                    </button>
+                    <button className='btn btn-primary ms-3  f-btn'>
+                        <a href="https://www.facebook.com/calculusoftheday">Facebook Page</a>
+                    </button>
                 </div>
                 <div className="col-md-2 footer-links">
                     <Link to='/'>Home</Link>
@@ -27,8 +33,7 @@ const Footer = () => {
                     <p>Swapnom73@gmail.com</p>
                 </div>
             </div>
-            <p className="pt-5 text-center fw-semibold">Copyright © 2022 Mathology</p>
-
+            <p className="pt-5 text-center fw-semibold">Copyright © 2022 Calculas Of The Day</p>
         </div>
     );
 };

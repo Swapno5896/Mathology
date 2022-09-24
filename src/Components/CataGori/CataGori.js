@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { selectFormLik, time_difference } from '../../utility/utility';
 import './CataGori.css'
 const CataGori = () => {
     const [catagori, setCatagori] = useState({});
@@ -8,44 +9,25 @@ const CataGori = () => {
     }
     const handelSubmit = () => {
         console.log(catagori);
-        if (catagori.catagori == 'Junior') {
-            if (catagori.segment == 'mean-contest') {
-                console.log('junior and mean');
-            } else if (catagori.segment == 'integration') {
-                console.log('junior and integration');
-            }
-            else if (catagori.segment == 'differentiation') {
-                console.log('junior and differentiation');
-            }
-            else if (catagori.segment == 'math-olympiad') {
-                console.log('junior and math-olympiad');
-            }
-            else {
+        // according to form info give specific link
+        const link = selectFormLik(catagori)
+        console.log(`your link is ${link}`);
 
-                console.log('junior application-of-calculu');
-            }
-        }
-        else {
-            if (catagori.segment == 'mean-contest') {
-                console.log('senior and mean');
-            } else if (catagori.segment == 'integration') {
-                console.log('senior and integration');
-            }
-            else if (catagori.segment == 'differentiation') {
-                console.log('senior and differentiation');
-            }
-            else if (catagori.segment == 'math-olympiad') {
-                console.log('senior and math-olympiad');
-            }
-            else {
-
-                console.log('senior application-of-calculu');
-            }
-        }
     }
-    // const redirectToCatagori =()=>{
 
-    // }
+    const click = () => {
+        const current = new Date();
+        setTimeout(() => {
+            const current2 = new Date();
+            const minuit = time_difference(current, current2)
+            console.log(minuit);
+            // const secondTime = current2.getTime() - current.getTime()
+            // console.log(secondTime / (1000 * 60));
+
+        }, 60000);
+
+    }
+
     return (
         <div className='container'>
             <h3 className='text-center mt-5 mb-5 catagori-welcome'>Welcome To CALCHUNT 1.0</h3>
@@ -61,9 +43,9 @@ const CataGori = () => {
                     </div>
                     <div class="form-floating" >
                         <select onChange={handelChange} class="form-select" id="catagori">
-                            <option selected>Choose Your Catagori</option>
+                            <option selected>Choose Your Catagory</option>
                             <option name='a' value="Junior" >Junior</option>
-                            <option name='b' value="Serion">Serion</option>
+                            <option name='b' value="Serion">Senior</option>
                         </select>
                     </div>
                     <div class="form-floating mt-3">
@@ -76,7 +58,8 @@ const CataGori = () => {
                             <option value="application-of-calculu">Application Of Calculu  </option>
                         </select>
                     </div>
-                    <button onClick={handelSubmit} type="submit" class="btn btn-primary mt-3">Submit</button>
+                    <button onClick={handelSubmit} type="submit" class="btn btn-primary mt-3">Go To Exam</button>
+                    <button onClick={click}>js</button>
                 </div>
             </div>
         </div>

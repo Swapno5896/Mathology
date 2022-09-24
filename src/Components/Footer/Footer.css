@@ -39,3 +39,9 @@
 .footer-location p {
     font-weight: 600;
 }
+
+.f-btn a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 16px;
+}
