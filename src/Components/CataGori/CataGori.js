@@ -1,31 +1,27 @@
 import React, { useState } from 'react';
 import { selectFormLik, time_difference } from '../../utility/utility';
-import './CataGori.css'
+import './CataGori.css';
+import { useNavigate } from "react-router-dom";
+
 const CataGori = () => {
+
+    let navigate = useNavigate();
     const [catagori, setCatagori] = useState({});
 
+    // set state
     const handelChange = (e) => {
         setCatagori({ ...catagori, [e.target.id]: e.target.value })
     }
+
+
     const handelSubmit = () => {
         console.log(catagori);
         // according to form info give specific link
         const link = selectFormLik(catagori)
-        console.log(`your link is ${link}`);
 
-    }
-
-    const click = () => {
-        const current = new Date();
-        setTimeout(() => {
-            const current2 = new Date();
-            const minuit = time_difference(current, current2)
-            console.log(minuit);
-            // const secondTime = current2.getTime() - current.getTime()
-            // console.log(secondTime / (1000 * 60));
-
-        }, 60000);
-
+        // store data in local storage
+        const ifremLink = localStorage.setItem("ifremLink", link[1]);
+        navigate("/event");
     }
 
     return (
@@ -59,7 +55,6 @@ const CataGori = () => {
                         </select>
                     </div>
                     <button onClick={handelSubmit} type="submit" class="btn btn-primary mt-3">Go To Exam</button>
-                    <button onClick={click}>js</button>
                 </div>
             </div>
         </div>
