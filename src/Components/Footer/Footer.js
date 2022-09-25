@@ -33,7 +33,7 @@ const Footer = () => {
                     <p>calculusoftheday@gmail.com</p>
                 </div>
             </div>
-            <p className="pt-5 text-center fw-semibold">Copyright © 2022 Calculas Of The Day</p>
+            <p className="pt-5 text-center fw-semibold">Copyright © 2022  Calculus of the Day</p>
         </div>
     );
 };

@@ -53,6 +53,13 @@ const CataGori = () => {
                     You can submit in any format(must have to be hand written) except videos.
                 </span>
                 Any image from the Internet, copy or any image including typing is prohibited and this will not be counted in marking. We know some problems are difficult to type, for that kind of problems if you send us the solution you will be eligible to get full marks.
+                <br />
+                <br />
+                <p className=''>
+                    <span className='fw-bolder fs-3 text-success'> Levels:</span>      <br />
+                    1. Junior(up to grade 10) <br />
+                    2. Senior(grade 11 to infinity)
+                </p>
                 <br />   <span className='fs-4 text-info '>
                     Email ID: calculusoftheday@gmail.com
                 </span>
