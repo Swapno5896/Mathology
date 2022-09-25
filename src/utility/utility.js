@@ -10,7 +10,7 @@ const selectFormLik = (catagori) => {
             return ['junior and mean', "https://docs.google.com/forms/d/e/1FAIpQLSeF3Z7ysS232DKb0_Cm8tyr7vHPiieVgTUxnPEhTdUG835F8w/viewform?embedded=true"] //done
         }
         else if (catagori.segment == 'differentiation') {
-            return ['junior and mean', "https://docs.google.com/forms/d/e/1FAIpQLSeb3W3T2gme6EISCQSuhGhFCbRaN0YwjFHIMMeHuMbpm3VXSA/viewform?embedded=true"]
+            return ['junior and mean', "https://docs.google.com/forms/d/e/1FAIpQLSdQVyyG-fHAD_6Ovd_i48MGS17N2NJ_Ihh82gUwPn_jlX_brg/viewform?embedded=true"] //done
         }
         else if (catagori.segment == 'math-olympiad') {
             return ['junior and mean', "https://docs.google.com/forms/d/e/1FAIpQLSc8wZiEqDcZ05ORnEoaT40YrKrEB_OSpXKS2-Kb1BFoqQHRvw/viewform?embedded=true"] //done
@@ -21,7 +21,7 @@ const selectFormLik = (catagori) => {
         }
     }
 
-
+    // senior
     else {
         if (catagori.segment == 'mean-contest') {
             return ['junior and mean', "https://docs.google.com/forms/d/e/1FAIpQLScPM9dfWb1tHHLuZg68Tdc3tiEfyLBtHl4pDJG454aLxJyNzA/viewform?embedded=true"] //DONE
@@ -29,7 +29,7 @@ const selectFormLik = (catagori) => {
             return ['junior and mean', "https://docs.google.com/forms/d/e/1FAIpQLSdlsQ8M0nmKFHltAmRXb3QLVqupuVP3xzrvJNXDM6sxj5nJlw/viewform?embedded=true"] //done
         }
         else if (catagori.segment == 'differentiation') {
-            return ['junior and mean', "https://docs.google.com/forms/d/e/1FAIpQLSeb3W3T2gme6EISCQSuhGhFCbRaN0YwjFHIMMeHuMbpm3VXSA/viewform?embedded=true"]
+            return ['junior and mean', "https://docs.google.com/forms/d/e/1FAIpQLScmXV9YJmTEpdIzPxp9OZbCtQVgk7kKKjqrLMrmo7QlJfts-g/viewform?embedded=true"] //done
         }
         else if (catagori.segment == 'math-olympiad') {
             return ['junior and mean', "https://docs.google.com/forms/d/e/1FAIpQLSeR6W3WsJLdCkWO7upkZWQur9F1nqjvVGsEX0TtLwODQyAUpQ/viewform?embedded=true"] // DONE
