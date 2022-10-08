@@ -40,4 +40,45 @@ const selectFormLik = (catagori) => {
         }
     }
 }
-export { time_difference, selectFormLik }
+const ShowResultImage = (catagori) => {
+    if (catagori.catagori == 'Junior') {
+        if (catagori.segment == 'integration') {
+            return ['junior and integration', "https://i.ibb.co/9tj2zP3/Integration-Bee-Junior.png"] // done
+        }
+        else if (catagori.segment == 'differentiation') {
+            return ['junior and differentiation', "https://i.ibb.co/tQqfmYQ/Differentiation-Bee-Junior.png"] // done
+        }
+        else if (catagori.segment == 'math-olympiad') {
+            return ['junior and math-olympiad', "https://i.ibb.co/NWy3smj/Math-Olympiad-Junior.png"] // done
+        }
+        else {
+
+            return ['junior and calculas', "https://i.ibb.co/QrXXtp8/Application-of-Calculus-Junior.png"] //
+        }
+    }
+
+    // senior
+    else {
+        if (catagori.segment == 'mean-contest') {
+            return ['junior and mean', "https://i.ibb.co/ChTS2QQ/Meme-Contest.png"] //done
+        } else if (catagori.segment == 'integration') {
+            return ['junior and mean', "https://i.ibb.co/kDQcSrB/Integration-Bee-Senior.png"] //done
+        }
+        else if (catagori.segment == 'differentiation') {
+            return ['junior and differentiation', "https://i.ibb.co/7YCHr0s/Differentiation-Bee-Senior.png"] //done
+        }
+        else if (catagori.segment == 'math-olympiad') {
+            return ['junior and mean', "https://i.ibb.co/4TVNHzz/Math-Olympiad-Senior.png"] // 
+        }
+        else {
+
+            return ['junior and mean', "https://i.ibb.co/BsXdT7g/Application-of-Calculus-Senior.png"] // 
+        }
+    }
+}
+export { time_difference, selectFormLik, ShowResultImage }
+
+
+
+
+

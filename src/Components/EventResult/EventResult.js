@@ -1,14 +1,24 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { ShowResultImage } from '../../utility/utility';
 import './EventResult.css'
 const EventResult = () => {
+    let navigate = useNavigate();
     const [catagori, setCatagori] = useState({});
 
     const handelChange = (e) => {
         setCatagori({ ...catagori, [e.target.id]: e.target.value })
     }
 
-    const handelSubmit = () => {
+    const handelSubmit = (event) => {
+        event.preventDefault()
         console.log(catagori);
+
+        const link = ShowResultImage(catagori)
+
+        // store link in local storage
+        const resultImageLink = localStorage.setItem("resultImageLink", link[1]);
+        navigate("/result");
     }
     return (
         <section className='py-5 my-5' >
@@ -33,9 +43,9 @@ const EventResult = () => {
                         <div class="col-md-8 mx-auto" data-aos="fade-up">
                             <form action="#" class="row g-4">
 
-                                <div class="form-group col-md-12">
+                                {/* <div class="form-group col-md-12">
                                     <input type="text" class="form-control" placeholder="Subject" />
-                                </div>
+                                </div> */}
 
                                 <div class="form-floating" >
                                     <select onChange={handelChange} class="form-select form-control" id="catagori">
@@ -56,7 +66,7 @@ const EventResult = () => {
                                     </select>
                                 </div>
                                 <div class="text-center">
-                                    <button class="btn btn-show-result" type="submit">Show Result</button>
+                                    <button class="btn btn-show-result" onClick={handelSubmit} type="submit">Show Result</button>
                                 </div>
                             </form>
                         </div>

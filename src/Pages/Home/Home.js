@@ -11,7 +11,7 @@ const Home = () => {
             <TopBanner></TopBanner>
             <EventResult></EventResult>
             <hr />
-            <CataGori></CataGori>
+            {/* <CataGori></CataGori> */}
 
         </>
 
