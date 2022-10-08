@@ -1,4 +1,5 @@
 import React from 'react';
+import SubscribeForEvent from '../../Components/SubscribeForEvent/SubscribeForEvent';
 import './Result.css'
 const Result = () => {
     const resultImageLink = localStorage.getItem("resultImageLink");
@@ -6,6 +7,10 @@ const Result = () => {
     return (
         <div className='container py-5'>
             <img className='result-image' src={resultImageLink} alt="" />
+            <div className='py-5'>
+                <SubscribeForEvent></SubscribeForEvent>
+
+            </div>
         </div>
     );
 };

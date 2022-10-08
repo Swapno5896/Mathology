@@ -14,7 +14,7 @@ const Footer = () => {
                     <button className='btn btn-primary ms-3  f-btn'>
                         <a href="https://www.facebook.com/groups/mathology">Facebook Group</a>
                     </button>
-                    <button className='btn btn-primary ms-3  f-btn'>
+                    <button className='btn btn-primary ms-3 mt-3  f-btn'>
                         <a href="https://www.facebook.com/calculusoftheday">Facebook Page</a>
                     </button>
                 </div>

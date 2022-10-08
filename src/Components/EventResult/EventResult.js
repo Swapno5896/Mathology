@@ -30,12 +30,10 @@ const EventResult = () => {
                 <div class="container">
                     <div class="row">
                         <div class="col-12 section-intro text-center" data-aos="fade-up">
-                            <h3 className='text-center pt-5  catagori-welcome'>Welcome To CALCHUNT 1.0</h3>
+                            <p className='text-center pt-5  catagori-welcome'>Hello Participants</p>
 
                             <div class="divider"></div>
-                            <p className='pb-2'>There are many variations of passages of Lorem Ipsum available, but the majority have
-                                suffered<br />
-                                alteration in some form, by injected humour, or randomised words which don't look even slightly
+                            <p className='pb-2 fs-4'>The results are out now. Your ability to relentlessly <br /> search for solutions to problems and find unique ways  of thinking is the key to this success <br /> and many to come. Warmest congratulations on your achievement! Wishing you even more success in the future.
                             </p>
                         </div>
                     </div>

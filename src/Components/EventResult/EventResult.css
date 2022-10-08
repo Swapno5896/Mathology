@@ -1,8 +1,9 @@
 .event-result-form {
-    height: 90vh;
+    height: 110vh;
     background-image: url('../../images/Cover 1.png');
     position: relative;
     z-index: 2;
+    margin-bottom: 50px;
 }
 
 .bg-cover {
