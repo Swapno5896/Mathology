@@ -19,7 +19,7 @@ const CataGori = () => {
         // according to form info give specific link
         const link = selectFormLik(catagori)
 
-        // store data in local storage
+        // store link in local storage
         const ifremLink = localStorage.setItem("ifremLink", link[1]);
         navigate("/event");
     }
@@ -37,7 +37,7 @@ const CataGori = () => {
                 There are <span className='text-success'>
                     15 questions
                 </span>  in total.
-
+                EventResult
 
                 <span className='text-warning'>
                     You will get only 45 minutes to answer,  After 45 minutes it will be closed automatically, and you can't be able to submit the form and will be disqualified.
